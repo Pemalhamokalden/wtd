@@ -5,7 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>table spanning</title>
     </head>
+    <style>
+        table {
+            width: 100%;
+        border: 1px solid black;
+    border-collapse: collapse;
+text-align: center;
+       }
+    </style>
     <body>
-        
+        <table border="1">
+            <tr>
+                <th colspan="2">H1</th>
+                <th>H2</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td rowspan="2" colspan="2">E</td>
+            </tr>
+            <tr></tr>
+        </table>
     </body>
 </html>
