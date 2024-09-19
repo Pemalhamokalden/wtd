@@ -1,0 +1,29 @@
+p {
+    background-color: rosybrown;
+    padding: 30px 0px;
+
+  }
+  
+  span {
+      background-color: rgb(135, 222, 174);
+      padding: 20px;
+  }
+
+#none {
+    display: none;
+  }
+
+#inline_block {
+    display: inline-block;
+}
+
+a {
+    background-color: rgb(176, 155, 196);
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+#flex{
+    display: flex;
+}
