@@ -1,0 +1,14 @@
+img{
+    float: left;
+}
+
+#div1 { 
+    background-color: rebeccapurple;
+    float: right;
+}
+
+#div2 {
+    background-color: green;
+    clear: right;
+}
+

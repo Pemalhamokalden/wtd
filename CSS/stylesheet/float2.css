@@ -1,0 +1,23 @@
+* {box-sizing: border-box;}
+
+#div1 {
+    float: none;
+    background-color: rgb(228, 28, 61);
+    height: 50px;
+}
+
+#div2 {
+    float: left;
+    background-color: rgb(95, 160, 111);
+    height: 300px;
+    width: 30%;
+    padding: 100px;
+    
+}
+
+#div3 {
+    float: right;
+    background-color: rgb(118, 137, 199);
+    height: 300px;
+    width: 70%;
+}
