@@ -1,0 +1,14 @@
+.flex-container {
+    background-color: rgb(112, 112, 233);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* direct children */
+.flex-container > div {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
