@@ -1,0 +1,23 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px 12px;
+    text-align: center;
+    background-color: rgb(143, 158, 207);
+    font-family:'Times New Roman', Times, serif;
+    font-size: small;
+
+}
+th {
+    background-color: #2654d3;
+    font-family: 'Times New Roman', Times, ;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
