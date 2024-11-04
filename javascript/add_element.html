@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>add element</title>
+    </head>
+    <body>
+        <div id="MyDiv">
+            <h1>Existing Content</h1>
+        </div>
+        <button onclick="addElement()">Add para</button>
+
+        <script>
+            function addElement(){
+                let newParagraph = document.createElement('P');
+                newParagraph.textContent = "This is a new para.";
+                let div = document.getElementById('MyDiv');
+                div.appendChild(newParagraph);
+                newParagraph.style.color = "blue";
+                addStyleToParagraph(newParagraph);
+            }
+            function addStyleToParagraph(){
+                newParagraph.style.background = "blue";
+                newParagraph.style.color = "red";
+            }
+        </script>
+        
+        
+    </body>
+</html>

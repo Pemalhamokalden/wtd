@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Handler</title>
+    </head>
+    <body>
+        <button id="MyButton">Click Me</button><br><br>
+    
+        <div id="move">Move the mouse here!</div><br><br>
+        <input id="onkeydown" type="text" placeholder="username"><br><br>
+        <input id="focus" type="text" placeholder="nick name" ><br><br>
+
+        <script>
+            document.getElementById('MyButton').onclick = function() {
+                alert('Button Clicked!');
+            }
+
+            document.getElementById('MyButton').onclick = function() {
+                alert('Button Clicked Again!');
+            }
+            
+            document.getElementById('move').onmousemove = function(){
+                this.style.color='red';
+                this.style.fontStyle='italic';
+            }
+            
+            document.getElementById('onkeydown').onkeydown = function(){
+                this.style.backgroundColor='red';
+            }
+
+            document.getElementById('focus').onfocus = function() {
+                this.style.backgroundColor='purple';
+                
+            };
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        /* Add some style to match the expected output */
+        #para {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #para a {
+            color: blue;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <h3>Exercise</h3>
+        <h5 class="heading">Remove me</h5> <!-- This will be removed -->
+        <p id="para">Add a new paragraph and a link inside that paragraph!</p>
+    </div>
+
+    <button onclick="addNewParagraph()">Add a paragraph</button>
+
+    <script>
+        function addNewParagraph() {
+            // Get the div element
+            var div = document.getElementById('myDiv');
+
+            // Remove the <h5> element with class 'heading'
+            var headingToRemove = document.querySelector('.heading');
+            if (headingToRemove) {
+                headingToRemove.remove();
+            }
+
+            // Create a new paragraph element
+            var newPara = document.createElement('p');
+            newPara.id = 'para'; // Set the same id as the previous paragraph
+            newPara.innerHTML = 'Click on the following link to visit JNEC website: <a href="https://www.jnec.edu.bt" target="_blank">link</a>';
+
+            // Set the new style for the paragraph
+            newPara.style.color = 'red';
+            newPara.style.fontSize = '24px';
+            newPara.style.fontWeight = 'bold';
+
+            // Replace the old paragraph with the new one
+            var oldPara = document.getElementById('para');
+            div.replaceChild(newPara, oldPara);
+        }
+    </script>
+</body>
+</html>
