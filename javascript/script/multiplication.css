@@ -19,10 +19,11 @@ body {
     text-align: center;
 }
 h2 {
-    color: #000305; /* Dark text color */
+    color: black; /* Dark text color */
     text-align: center;
 }
 button {
     margin-top: 20px;
     text-align: center;
+
 }

@@ -15,12 +15,14 @@
             function replaceElements(){
                 let parentDiv = document.getElementById('MyDiv');
                 let oldParagraph = document.getElementById('oldParagraph');
-                let newParagraph = document.createElementById('p');
-                newParagraph.textContent = "This is the new paragraph";
-                parentDiv.replaceChild(newParagraph,oldParagraph);      
+                
+                // Corrected the creation of the new paragraph element
+                let newParagraph = document.createElement('p');  // Create a new <p> element
+                newParagraph.textContent = "This is the new paragraph";  // Set text for the new paragraph
+                
+                parentDiv.replaceChild(newParagraph, oldParagraph);  // Replace the old paragraph with the new one      
             }
         </script>
        
-        
     </body>
 </html>
